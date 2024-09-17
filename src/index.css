@@ -1,0 +1,165 @@
+/* ============= GLOBAL CSS =============== */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: rgb(16, 16, 16);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: Roboto;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.8rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  margin: 0;
+  letter-spacing: 0.05em;
+  color: rgb(16, 16, 16);
+  max-width: 40em;
+  text-transform: capitalize;
+}
+
+/* ============================================
+                PROJECT CSS
+   ============================================ */
+
+main {
+  margin: 5rem auto;
+}
+
+.container {
+  width: 90vw;
+  background: #f2f2f2;
+  max-width: 40rem;
+  margin: 0 auto;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+}
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.task-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 0.3rem;
+}
+
+.form-input {
+  border: 2px solid rgb(173, 173, 173);
+  border-radius: 0.2rem;
+}
+
+.form-input:focus {
+  outline: none !important;
+  border: 2px solid rgb(74, 74, 74);
+}
+
+.btn {
+  background: #8e2de2;
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  outline: none !important;
+}
+
+.btn:hover {
+  background: rgb(23, 23, 23);
+  color: white;
+}
+
+.task-container {
+  margin-top: 2rem;
+}
+
+.single-task {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-delete {
+  background: #171717;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/* ============================================
+                MEDIA QUERIES 
+   ============================================ */
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
